@@ -11,8 +11,10 @@
 
 		{% if prediction[0]== 0 %}
 <h2>This Customer claim is Legit</h2>
+<button>Proceed to payment</button>
 {%else%}
 <h2>This Customer claim maybe Fraudulent</h2>
+<h3>there is need for further investigation</h3>
 
 {%endif%}
 
