@@ -163,7 +163,10 @@ def predict():
         prd =1
 
     bi=request.form['bodily_injuries']
-    bi=int(bi)
+    if bi=="No":
+        bi=0
+    elif bi=="Yes":
+        bi=1
   
     wt=request.form['witnesses']
     wt=int(wt)
